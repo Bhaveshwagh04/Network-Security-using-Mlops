@@ -8,6 +8,8 @@ from networksecurity.entity.artifact_entity import DataTransformationArtifact,Mo
 from networksecurity.entity.config_entity import ModelTrainerConfig
 
 from xgboost import XGBClassifier
+from sklearn.model_selection import RandomizedSearchCV
+from scipy.stats import uniform, randint
 
 from networksecurity.utils.ml_utils.model.estimator import NetworkModel
 from networksecurity.utils.main_utils.utils import save_object,load_object
